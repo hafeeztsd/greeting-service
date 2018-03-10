@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: greeting-service
+    
+
+eureka:
+  client:
+    register-with-eureka: true
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 3
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9091/eureka/
+      
+server:
+  port: 7071      
+    
